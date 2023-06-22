@@ -1,0 +1,21 @@
+.category {
+    padding-top: 8em;
+    background-color: rgb(var(--primary-color));
+}
+
+.tabs-container {
+    font-size: 1.6rem;
+    font-family: Helvetica, sans-serif;
+    padding: 3em 1em !important;
+}
+
+.react-tabs__tab--selected {
+    background-color: rgb(var(--secondary-color)) !important;
+    color: rgb(var(--neutral-100));
+}
+
+.category-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20em, 100%), 1fr));
+    gap: 2em;
+}

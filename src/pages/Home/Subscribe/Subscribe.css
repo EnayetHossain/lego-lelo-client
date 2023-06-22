@@ -1,0 +1,64 @@
+.subscribe-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em 1em;
+    font-size: 1.6rem;
+}
+
+.subscribe-img {
+    width: min(30em, 100%);
+    height: min(18em, 100%);
+    overflow: hidden;
+    border-radius: 2em;
+}
+
+.subscribe-img img {
+    height: 100%;
+}
+
+.subscribe-info {
+    padding: 2em 0;
+}
+
+.subscribe-text {
+    font-size: clamp(3rem, 4.3vw, 5rem);
+    font-family: 'Oswald', sans-serif;
+    color: rgb(var(--secondary-color));
+    line-height: 1.1;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-form input {
+    margin: 1em 0;
+}
+
+input {
+    border: none;
+    outline-color: transparent;
+    font-size: 1.6rem;
+    background-color: rgba(var(--accent-color), 0.5);
+    padding: 0.8em;
+    border-radius: 1.8em;
+}
+
+input[type="submit"] {
+    background-color: rgba(var(--accent-color));
+    font-weight: 600;
+    color: rgb(var(--neutral-100));
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 870px) {
+    .subscribe-section {
+        flex-direction: column;
+    }
+
+    .subscribe-img {
+        margin: 2em 0;
+    }
+}

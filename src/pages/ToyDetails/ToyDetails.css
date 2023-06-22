@@ -1,0 +1,82 @@
+.toy-details {
+    background-color: rgb(var(--primary-color));
+    font-size: 1.6rem;
+    padding: 2em 0;
+}
+
+.toy-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toy-img {
+    width: 120em;
+    padding-right: 2em;
+    overflow: hidden;
+    height: 30em;
+}
+
+.toy-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.toy-name {
+    color: rgb(var(--secondary-color));
+    font-size: clamp(2.5rem, 2.5vw, 3.3rem);
+}
+
+.price-ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    margin: 1em 0;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(255, 0, 106);
+}
+
+.ratings {
+    color: rgb(var(--accent-color));
+    margin-right: 0.5em;
+}
+
+.seller-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2em 0;
+    flex-wrap: wrap;
+}
+
+.seller-name {
+    margin-bottom: 0.3em;
+}
+
+.toy-description {
+    line-height: 1.5;
+    margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 870px) {
+    .toy-element {
+        flex-direction: column;
+    }
+
+    .toy-img {
+        width: 100%;
+        height: 100%;
+        padding: 1em 0;
+    }
+
+    .toy-img img {
+        width: 100%;
+    }
+}

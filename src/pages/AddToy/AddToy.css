@@ -1,0 +1,11 @@
+.subcategory,
+textarea {
+    background-color: rgb(var(--neutral-100));
+    padding: 0.8em;
+    font-size: 1.6rem;
+    border-radius: 2em;
+    border: none;
+    outline-color: transparent;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+}

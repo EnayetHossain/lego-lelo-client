@@ -1,0 +1,27 @@
+.toys-title {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.all-toys {
+    background-color: rgb(var(--primary-color));
+}
+
+.search-toy {
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.search-toy>input[type="search"] {
+    margin-right: 1em;
+}
+
+.btn-view {
+    font-size: 1.6rem;
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--neutral-100));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2em;
+}

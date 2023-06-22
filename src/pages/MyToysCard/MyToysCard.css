@@ -1,0 +1,40 @@
+.toy-image {
+    width: 8em;
+    height: 5em;
+    overflow: hidden;
+    border-radius: 0.5em;
+
+}
+
+.toy-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.edit {
+    margin: 0 0.5em;
+}
+
+.update {
+    background-color: rgb(var(--secondary-color));
+    color: rgb(var(--neutral-100))
+}
+
+.update:hover {
+    background-color: rgba(var(--secondary-color), 0.8);
+}
+
+.delete {
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--neutral-100));
+    font-size: 1.6rem;
+}
+
+.delete:hover {
+    background-color: rgba(var(--accent-color), 0.8);
+}
+
+.my-toy-card {
+    box-shadow: 1px 1px 10px rgba(var(--neutral-0), 0.2) !important;
+}

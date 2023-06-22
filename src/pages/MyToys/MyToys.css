@@ -1,0 +1,23 @@
+.my-toy-cards {
+    background-color: rgb(var(--primary-color));
+}
+
+.toy-title {
+    text-align: center;
+}
+
+.my-toy-container {
+    padding: 2em 0 !important;
+}
+
+.sort {
+    width: max-content;
+    border: none;
+    outline-color: transparent;
+    padding: 0.5em;
+}
+
+.sort-form>input[type="submit"] {
+    padding: 0.35em 0.5em;
+    border-radius: 0;
+}

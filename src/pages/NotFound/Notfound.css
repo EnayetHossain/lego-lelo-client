@@ -1,0 +1,22 @@
+.not-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("/404.gif");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    font-size: 1.6rem;
+    background-color: rgb(var(--accent-color));
+    color: rgb(var(--neutral-100));
+    font-weight: bold;
+}
+
+.home:hover {
+    background-color: rgb(var(--accent-color));
+}

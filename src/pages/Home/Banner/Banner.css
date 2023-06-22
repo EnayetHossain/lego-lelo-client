@@ -1,0 +1,32 @@
+.banner {
+    background-color: rgb(var(--primary-color));
+}
+
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(var(--secondary-color));
+}
+
+.banner-title {
+    font-size: clamp(3rem, 3.5vw, 5rem);
+    font-weight: 600;
+}
+
+.banner-description {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 1.5em 0;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 870px) {
+    .banner-text {
+        margin-top: 6em;
+    }
+
+    .banner-section {
+        flex-direction: column;
+    }
+}

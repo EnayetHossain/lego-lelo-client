@@ -1,0 +1,120 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 0.5em 0;
+    position: relative;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(var(--accent-color));
+    z-index: 5;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.menu-item,
+.login a {
+    margin: 0 1em;
+}
+
+.log-menu {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    background-color: green;
+    width: 2.3em;
+    height: 2.3em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.ham-bar {
+    display: none;
+    z-index: 5;
+}
+
+.mobile-menu {
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    transition: 0.5s cubic-bezier(0, 0.19, 0.34, 0.99);
+    z-index: 5;
+    border-radius: 0.3em;
+    display: none;
+}
+
+.mobile-menu-item {
+    margin: 1em 0;
+}
+
+.mobile-login {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-log-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.height-0 {
+    height: 0;
+    overflow: hidden;
+}
+
+.height-100 {
+    height: 20em;
+    overflow: hidden;
+    background-color: rgba(var(--neutral-100));
+}
+
+.active {
+    padding: 0.5em;
+    background-color: rgba(var(--neutral-0), 0.1);
+}
+
+.btn {
+    border: none;
+    outline-color: transparent;
+    padding: 0.5em;
+    text-transform: capitalize;
+    margin-left: 0.5em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    background-color: rgba(var(--neutral-0), 0.2);
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 870px) {
+    .ham-bar {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .main-menu,
+    .log-menu {
+        display: none;
+    }
+
+    .btn {
+        margin-top: 0.5em;
+    }
+}
